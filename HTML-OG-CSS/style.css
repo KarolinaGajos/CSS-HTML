@@ -41,6 +41,7 @@ article{
     max-width: 400px;
     min-width: 250px;
     width: 100%;
+    margin: 0 auto;
 }
 
 main section article img{
