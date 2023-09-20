@@ -13,10 +13,14 @@
                     <a href="index.html">Logo</a>
                 </span>
                 <!-- "ul",ukoordinrte lister, ordna er "ol" , li lister må ligge under ol, ul,-->
+                <!-- obs funker ikke med classer!!! -->
+                <!-- lages snarveier på nettsiden, liker til ide som heter about-section -->
                 <ul>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="#">subscribe</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#about-section">about</a></li>
+                    <!-- linker til annet html dokument på nettstedet -->
+                    <li><a href="subscribe.html">subscribe</a></li>
+                    <!-- linker til annet nettsted -->
+                    <li><a href="https://www.google.som">contact</a></li>
                 </ul> 
             </nav>
         <!-- navigasjon -->
@@ -31,6 +35,7 @@
                     <h3>Grå pus</h3>
                     <p>Pig in a python. Organic growth dear hiring manager: i'll book a meeting so we can solution this before the sprint is over we need to button up our approach.</p>
                     <a href="#" class="read-more-btn">Les mer</a>
+                    <!-- bruk nindestrekk! uten da bir det 3 calsser  -->
                 </article>
                 <article>
                     <img src="img/turtle-8105993_640.jpg" alt="en kul skilpadde som dukker opp i havoverflaten">
@@ -46,15 +51,16 @@
                 </article>
             </section>
         </main>
-        <section>
+        <section id="about-section">
+            <!-- id vi få tak i det overalt, java, css, vi kan linke til de, lage shorcuts -->
             <div id="pynt">
 
             </div>
-            <h2>about</h2>
+            <h2>About</h2>
             <p>We're building the plane while we're flying it. Pre launch. Future-proof nobody's fault it could have been managed better build on a culture of contribution and inclusion, so who's responsible for the ask for this request?, yet roll back strategy we need to get the vernacular right, but drink from the firehose. Scope creep quick win, yet roll back strategy, and Q1 we need to future-proof this. Radical candor c-suite going forward. Radical candor regroup criticality .</p>
 
         </section>
-        <section>
+        <section id="subscribe">
             <h3>Subscribe</h3>
             <form>
                 <label for="email-signup">Email for newsletter sign-up</label>

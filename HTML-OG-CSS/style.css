@@ -1,8 +1,21 @@
 /* id bør være ulike, classer hvor mange vi vil, atrybut selector - skal ikke brukes her,  */
 /* regelsett - bakgrunn */
+/*  css fuksjon calk - automatisk matamatikk, teks bli responsiv  */
+
+
+/* *stjerne selektor - gjeller alt!!! forsiktig, setter du den på hver element - overskriver mye, andre elementer arver  */
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: calc(1em + 1vw);
+    /* em - ta utgangspunt i pixel verdi, vw - en del av visinitg bredden, nettleser bredden, calkuleres */
+    /* rem verdier kommer til å endre seg grunnet pix */
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: #e0b7b7;
 }
 /* css for header og nav */
 
@@ -41,9 +54,61 @@ article{
     max-width: 400px;
     min-width: 250px;
     width: 100%;
-    margin: 0 auto;
+    margin: 1rem auto; 
+    /* 0 tar alt luften, auto gjør det midtsentrert, endres til  */
+    /* absolute målenheter - pixel, andre % osv. */
+    background-color: #efff;
 }
+
 
 main section article img{
     width: 100%;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+p{
+    font-size: 1.4rem;
+    margin: 15px;
+}
+/* bruker  . når vi skriver til calasser ! */
+.read-more-btn{
+    background-color: #2c2626;
+    color: #efff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none ;
+    margin: 0.5rem;
+
+}
+/* klasser brukes for å gjenbruke design  */
+#about-section{
+    text-align: center;
+    padding: 2rem 0;
+}
+/* det tar bare den ene p taggen i about section  */
+#about-section p{
+    text-align: justify;
+}
+#pynt{
+    background-image: url("img/shellfish-8080937_1280.jpg");
+    height: 300px;
+    padding: 2rem;
+
+}
+#subscribe{
+    background-color: #f1e7e7;
+    padding: 1rem;
+    text-align: center;
+
+}
+#subscribe form label, #subscribe form input{
+    display: block;
+    margin: 0 auto;
 }
